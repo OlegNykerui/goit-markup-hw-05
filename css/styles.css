@@ -35,6 +35,7 @@ img {
 /* -------------utulities------------- */
 .link{
   text-decoration: none;
+    transition: color 255ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list{
   padding: 0;
@@ -113,9 +114,15 @@ text-decoration:none ;
   
 }
 
+
+
+
 .link:hover,
 .link:focus{
   color: var(--accent-color);
+
+
+
 }
 
 
@@ -182,6 +189,7 @@ align-items: center;
 .contacts:hover,
 .contacts:focus {
  color: var(--accent-color);
+
 
 }
 
@@ -278,6 +286,8 @@ height: 50px;
 
 }
 
+/* -------------Modal------------- */
+
 
 .backdrop{
   position: fixed;
@@ -295,7 +305,7 @@ transition: opacity 255ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.backdrop.is-hidden{
+.is-hidden{
   opacity: 0;
   pointer-events: none;
 
@@ -308,7 +318,7 @@ transition: opacity 255ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal{
   position: absolute;
   top: 50%;
-left: 50%;
+  left: 50%;
   min-width: 528px;
   min-height: 581px;
   padding: 15px;
@@ -339,8 +349,8 @@ justify-content: center;
 }
 
 .modal-btn:hover{
-  fill: var(--white-color);
-  background-color: #2196F3;
+  fill: var(--accent-color);
+  background-color: var(--white-color);
 }
 
 
@@ -565,16 +575,17 @@ padding-bottom: 30px;
     align-items: center;
     width: 44px;
     height: 44px;
-      border-radius: 50%
- 
-    ;
+      border-radius: 50%;
+
+    transition: background-color 255ms cubic-bezier(0.4, 0, 0.2, 1) 
+   ;
 }
 
 .social-link:hover,
 .social-link:focus{
   fill: var(--white-color);
   background-color: var(--accent-color);
-  /* border-radius: 50% */
+ 
 }
 
 
@@ -646,6 +657,8 @@ list-style: none;
   
 
   fill:  var(--icon-color);
+
+  transition: fill 255ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .icon-link:hover,
@@ -765,6 +778,8 @@ font-weight: 700;
   align-items: center;
   justify-content: center;
 
+  transition: background-color 255ms cubic-bezier(0.4, 0, 0.2, 1)
+
 }
 
 .join-link:hover,
@@ -823,6 +838,13 @@ border-radius: 4px;;
 padding: 6px 22px;
 
 text-align: center;
+
+transition: background-color 255ms cubic-bezier(0.4, 0, 0.2, 1),
+            color 255ms cubic-bezier(0.4, 0, 0.2, 1),
+             box-shadow 255ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
  }
 
 
